@@ -274,7 +274,7 @@ export function Projects() {
                     <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
                     
                     {/* Image */}
-                    <Image
+                    <img
                       src={project.image || "https://placehold.co/600x400/indigo/white"}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.05]"
