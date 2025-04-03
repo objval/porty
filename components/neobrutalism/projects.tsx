@@ -17,6 +17,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 // Define project types
 interface Project {
@@ -124,7 +125,7 @@ export function Projects() {
     }
     
     setProjects(filtered);
-  }, [activeCategory, searchTerm]);
+  }, [activeCategory, searchTerm, allProjects]);
 
   // Category links
   const categories = [
@@ -273,7 +274,7 @@ export function Projects() {
                     <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay z-20"></div>
                     
                     {/* Image */}
-                    <img
+                    <Image
                       src={project.image || "https://placehold.co/600x400/indigo/white"}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.05]"

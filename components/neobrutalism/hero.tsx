@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 /**
  * Hero section with Neobrutalism styling
@@ -79,7 +80,7 @@ export function Hero() {
               </Badge>
               
               <div className="relative">
-                <p className="text-2xl font-bold text-muted-foreground">Hello! I'm</p>
+                <p className="text-2xl font-bold text-muted-foreground">Hello! Im</p>
                 <h1 
                   ref={titleRef}
                   className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground mt-1"
@@ -173,7 +174,7 @@ export function Hero() {
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 z-30 mix-blend-overlay"></div>
               
               {/* Main image */}
-              <img 
+              <Image 
                 src="https://sdmntprwestus.oaiusercontent.com/files/00000000-11c8-5230-bac2-147ab24c564d/raw?se=2025-04-02T04%3A05%3A19Z&sp=r&sv=2024-08-04&sr=b&scid=25510143-a965-5c60-9a5c-70489c006a0e&skoid=51916beb-8d6a-49b8-8b29-ca48ed86557e&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-01T19%3A43%3A38Z&ske=2025-04-02T19%3A43%3A38Z&sks=b&skv=2024-08-04&sig=ka3qN/kyfE4e8Iswqd0t0fQ6pybH/ouv3Hlt%2BJR0Oh8%3D" 
                 alt="Developer portrait" 
                 className="object-cover aspect-square w-full z-10"

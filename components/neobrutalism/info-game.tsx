@@ -207,7 +207,7 @@ export function InfoGame() {
     
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [gameStarted, currentPosition, infoItems, discoveredCount, expandedItem]);
+  }, [gameStarted, currentPosition, infoItems, discoveredCount, expandedItem, handleDiscover, handleMove]);
   
   // Calculate grid size for layout
   const gridSize = Math.ceil(Math.sqrt(infoItems.length));
